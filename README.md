@@ -31,32 +31,18 @@ The [definitions](field_definitions.tsv) format for the current supported fields
 
 
 ## Mappings To Other Data Models & Databases
- 1. **mapping_BCDM_to_BOLD.tsv**: This document provides mapping of the BCDM data fields to the BOLD Relational Database. 
-
-<br>
-
-  |**Column name** | **Definition**|
-  | :----------|:---------|
-  |bcdm_field| Standardized/universal name for the data field.|
-  |bold_db | The relational database to which the data of the universal field are residing, in the format: `server`:`database_name`.  Example: db1:newdb12 |
-  |bold_db_table| The specific database table to which the universal field is mapped to.|
-  |bold_db_field| The specific database field to which the universal field is mapped to.|
-  |rules| Set of regex used for basic data validation.
-  | |
-<br>
-<br>
  
- 2. **mapping_BCDM_to_DWC.tsv**: This document provides the mapping of the BCDM to Darwin Core standard. Please notice that not all BCMD fields have an equivalent term in the Darwin Core standard and therefore they will not be part of the export. DarwinCore fields can be found in the following link: `[Darwin Reference Guide] (https://dwc.tdwg.org/terms/)`
+ 1. **mapping_BCDM_to_DWC.tsv**: This document provides the mapping of the BCDM to Darwin Core standard. Not all BCMD fields have an equivalent term in the Darwin Core standard some fields are ommitted during mapping or conversion. DarwinCore field definitions can be found in the following link: [Darwin Reference Guide] (https://dwc.tdwg.org/terms/)
  
 <br>
 
   
   |**Column name** | **Definition**|
   | :----------|:---------|
-  |bcdm_field | Standardized/universal name for the data field.|
+  |bcdm_field | BCDM field name.|
   |dwc_field | Corresponding term in the Darwin Core glossary.|
   |bcdm_type|Data type of the field as in the BCDM. For example: integer, float,string, and string:date |
   |bcdm_format| Additional formatting constraint for the data value as in the BCDM. For example: a timestamp field may follow this format `%d-%b-%y`; default indicates no extra formatting constraint specified.  |
-  |dwc_type|Data type of the field as in the Darwin Core standard.|
-  |dwc_format| Additional formatting constraint for the data value as in the Darwin Core standard.|
+  |dwc_type| Data type of the Darwin Core field as specified in the standard.|
+  |dwc_format| Additional formatting constraint for the data value as specified in the Darwin Core standard.|
   | |
