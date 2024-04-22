@@ -30,7 +30,7 @@ The [definitions](field_definitions.tsv) format for the current supported fields
 <br>
 
 
-## Mappings to Other Data Models
+## Mappings To Other Data Models & Databases
  1. **mapping_BCDM_to_BOLD.tsv**: This document provides mapping of the BCDM data fields to the BOLD Relational Database. 
 
 <br>
