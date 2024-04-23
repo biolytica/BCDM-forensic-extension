@@ -66,7 +66,7 @@ sampling_protocol	string	default	The names of, references to, or descriptions of
 nuc	string	default	Nucleotide sequence as submitted.
 nuc_basecount	integer	default	Count of IUPAC non-degenerate nucleotide symbols. 
 insdc_acs	string	default	Accession number assigned to a sequence upon its deposition in one of the databases affiliated with the International Nucleotide Sequence Database Collaboration, 'www.insdc.org'.
-funding_src	string	default	Funding source where provided.
+funding_src	string	default	Source of funding for data generation, curation, and publication.
 marker_code	string	default	Short code associated with the sequenced marker(gene).
 primers_forward	array	default	A comma separated list of forward primer code and sequence pairs, with each code and sequence separated by a colon.
 primers_reverse	array	default	A comma separated list of reverse primer code and sequence pairs, with each code and sequence separated by a colon.
