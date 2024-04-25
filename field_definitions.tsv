@@ -11,8 +11,6 @@ bin_created_date	string:date	%Y-%m-%d	Date of BIN creation in BOLD.
 collection_code	string	default	Code associated with a given collection within an institution.
 inst	string	default	Institution storing the physical specimen.
 taxid	number	default	Identifier associated with the taxon assignment.
-taxon_name	string	default	Taxon name assocaited with the record.
-taxon_rank	string	default	Rank of assigned taxon.
 kingdom	string	default	Taxonomy: Kingdom.
 phylum	string	default	Taxonomy: Phylum.
 class	string	default	Taxonomy: Class.
