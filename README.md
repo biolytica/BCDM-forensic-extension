@@ -46,3 +46,9 @@ The [definitions](field_definitions.tsv) format for the current supported fields
   |dwc_type| Data type of the Darwin Core field as specified in the standard.|
   |dwc_format| Additional formatting constraint for the data value as specified in the Darwin Core standard.|
   | |
+
+
+## Planned Actions
+
+- Add required fields
+- Add regex rules for basic validation
