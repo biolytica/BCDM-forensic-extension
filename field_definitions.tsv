@@ -71,3 +71,7 @@ primers_reverse	array	default	A comma separated list of reverse primer code and 
 sequence_run_site	string	default	Full name of the institution where sequencing was performed or the database the sequence was retrieved from.
 sequence_upload_date	string:date	%Y-%m-%d	Date the sequence was uploaded.
 bold_recordset_code_arr	array	default	A comma separated list of Projects and Datasets on BOLD that this record is associated with.
+ecoregion	string	default	Inferred WWF defined ecoregion based on the collection coordiantes.
+biome	string	default	Inferred WWF defined biome based on the collection coordiantes.
+sovereign_inst	string	default	Institution with sovereignty over the physical specimen.
+
