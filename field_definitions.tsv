@@ -75,3 +75,5 @@ ecoregion	string	default	Inferred RESOLVE defined ecoregion based on the collect
 biome	string	default	Inferred RESOLVE defined biome based on the collection coordinates.
 realm	string	default	inferred RESOLVE defined realm based on collection coordinates.
 sovereign_inst	string	default	Institution with sovereignty over the physical specimen.
+created_at	string:date	%Y-%m-%d	The date when the record was first created in the database in GMT (UTC+0).
+updated_at	string:date	%Y-%m-%d	The date when the record was last modified in the database in GMT (UTC+0).
