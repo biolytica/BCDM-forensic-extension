@@ -1,4 +1,4 @@
-bcdm_field	bold_field  bold_verbatim_field  
+bcdm_field	bold_field
 associated_specimens	specimendetails.associated_specimens
 associated_taxa	specimendetails.associated_taxa
 bin_uri	barcodecluster.uri
