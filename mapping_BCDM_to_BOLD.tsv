@@ -72,3 +72,4 @@ taxid	specimen.taxid
 taxon_name	tax.taxon
 taxon_rank	tax__tax_rank.tax_rank.name
 geoid	location.geopolid
+saps_sample_reference_id	specimendetails.saps_sample_reference_id
