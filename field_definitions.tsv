@@ -77,4 +77,4 @@ realm	string	default	collection	inferred RESOLVE defined realm based on collecti
 sovereign_inst	string	default	identifier	Institution with sovereignty over the physical specimen.
 created_at	string:date	%Y-%m-%d	identifier	The date when the record was first created in the database in GMT (UTC+0).
 updated_at	string:date	%Y-%m-%d	identifier	The date when the record was last modified in the database in GMT (UTC+0).
-
+saps_sample_reference_id	string	default	bowp_extension	The identifier found on the South African Police Services (SAPS) sample seal
