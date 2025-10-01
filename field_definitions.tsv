@@ -96,3 +96,5 @@ specimen_height_cm	int	default	bowp_extension_advanced	Height of specimen at tim
 specimen_weight_g	int	default	bowp_extension_advanced	Weight of specimen at the time of collection
 specimen_length_cm	int	default	bowp_extension_advanced	Length of specimen at time of collection
 confidence_of_identification	string	default	bowp_extension	Confidence of the taxonomic identification (at the identification_rank). Controlled vocabulary (High/Medium/Low/None)
+coc_start_coord	geopoint	array	bowp_extension_advanced	Latitude & Longitude in decimal degrees (DD) format (e.g. 45.837) of the location where the COC process started.
+
