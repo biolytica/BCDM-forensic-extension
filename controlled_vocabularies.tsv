@@ -56,3 +56,23 @@ BOLD:CV:SMPRC40	Sampling_protocol	Vane trap	Intercepts flying insects with verti
 BOLD:CV:SMPRC41	Sampling_protocol	Pheromone trap	Uses species-specific pheromones to attract target insects, like moths or beetles, into a collection device, ideal for monitoring pest species.
 BOLD:CV:SMPRC42	Sampling_protocol	Sticky trap	A passive sampling method that uses a sticky surface to capture insects as they land, effective for small, flying insects like aphids, whiteflies, and thrips.
 BOLD:CV:SMPRC43	Sampling_protocol	Lindgren funnel	A multi-funnel trap designed to intercept and capture flying insects, especially bark beetles and other forest pests, guiding insects down through a series of funnels into a collection container.
+BOWP:CV:COI1	confidence_of_identification	high	Ronny to add definition
+BOWP:CV:COI2	confidence_of_identification	medium	Ronny to add definition
+BOWP:CV:COI3	confidence_of_identification	low	Ronny to add definition
+BOWP:CV:COI4	confidence_of_identification	none	Ronny to add definition
+BOWP:CV:MOD1	method_of_delivery	post-collection	Ronny to add definition
+BOWP:CV:MOD2	method_of_delivery	courier	Ronny to add definition
+BOWP:CV:MOD3	method_of_delivery	hand-delivered	Ronny to add definition
+BOWP:CV:RG1	reference_grade	platinum	Ronny to add brief text definition definition.  References specification document.
+BOWP:CV:RG2	reference_grade	gold	Ronny to add brief text definition definition.  References specification document.
+BOWP:CV:RG3	reference_grade	silver	Ronny to add brief text definition definition.  References specification document.
+BOWP:CV:RG4	reference_grade	bronze	Ronny to add brief text definition definition.  References specification document.
+BOWP:CV:SBC1	sealed_bag_contents	biomaterial	Ronny to add definition
+BOWP:CV:SBC2	sealed_bag_contents	compact-disc	Ronny to add definition
+BOWP:CV:SBC3	sealed_bag_contents	sd-card	Ronny to add definition
+BOWP:CV:SBC4	sealed_bag_contents	forensic-bag	Ronny to add definition
+BOWP:CV:STT1	specimen_tag_type	microchip	Ronny to add definition
+BOWP:CV:STT2	specimen_tag_type	ring	Ronny to add definition
+BOWP:CV:STT3	specimen_tag_type	physical-tag	Ronny to add definition
+BOWP:CV:STT4	specimen_tag_type	notch	Ronny to add definition
+BOWP:CV:STT5	specimen_tag_type	branding	Ronny to add definition
