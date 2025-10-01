@@ -95,5 +95,4 @@ specimen_tag_type	array	array	bowp_extension	Type of tagging or marking method u
 specimen_height_cm	int	default	bowp_extension_advanced	Height of specimen at time of collectionj
 specimen_weight_g	int	default	bowp_extension_advanced	Weight of specimen at the time of collection
 specimen_length_cm	int	default	bowp_extension_advanced	Length of specimen at time of collection
-confidence_of_identification	string	default	bowp_extension	Confidence of the taxonomic identification (at the identification_rank). Controlled vocabulary (High/Medium/Low/None)	
-
+confidence_of_identification	string	default	bowp_extension	Confidence of the taxonomic identification (at the identification_rank). Controlled vocabulary (High/Medium/Low/None)
