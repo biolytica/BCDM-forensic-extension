@@ -30,7 +30,7 @@ identification_method	specimen.identification_method
 identification_rank	tax__tax_rank.tax_rank.name
 identified_by	specimendetails__identifier.person.fullname
 insdc_acs	seqdata.gb_asc
-inst	specimen.inst.name
+inst	specimen__fk_inst.inst.name
 kingdom	tax__tax_division.tax_division.name
 life_stage	specimendetails.lifestage
 marker_code	marker.code
