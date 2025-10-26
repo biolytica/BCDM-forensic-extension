@@ -87,11 +87,11 @@ collector_id	string	default	bowp_extension	Personal identification for the prima
 collector_phone	string	default	bowp_extension	Personal phone number for the primary/COC collector
 method_of_delivery	string	default	bowp_extension_advanced	Mode of sample transporation from collection site to respository.  Controlled vocabulary (couriers, hand-delivered)
 reference_grade	string	default	bowp_extension	Grading of the record for completion and compliance.  Controlled vocabulary (A.Platinum/B.Gold/C.Silver/D.Bronze)
-sealed_bag_contents	array of string	array	bowp_extension	Type of material or device in a given sealed bag. Controlled vocabulary (CD/SD-CARD/biomaterial/evidence-bag)
-sealed_bag_ids	array of string	array	bowp_extension	Id of sealed bag corresponding with sealed_bag_contents
+sealed_bag_contents	array	default	bowp_extension	Type of material or device in a given sealed bag. Controlled vocabulary (CD/SD-CARD/biomaterial/evidence-bag)
+sealed_bag_ids	array	default	bowp_extension	Id of sealed bag corresponding with sealed_bag_contents
 sample_collection_kit_id	string	default	bowp_extension	Id of the sample collection kit used to collect and preserve the sample in the field.
-specimen_tag_id	array of string	array	bowp_extension	Id of tag associated with specimen_tag_type
-specimen_tag_type	array of string	array	bowp_extension	Type of tagging or marking method used to embed an id on the specimen.  Controlled vocabulary (tag/notch/microchip/ring)
+specimen_tag_id	array	default	bowp_extension	Id of tag associated with specimen_tag_type
+specimen_tag_type	array	default	bowp_extension	Type of tagging or marking method used to embed an id on the specimen.  Controlled vocabulary (tag/notch/microchip/ring)
 specimen_height_cm	int	default	bowp_extension_advanced	Height of specimen at time of collectionj
 specimen_weight_g	int	default	bowp_extension_advanced	Weight of specimen at the time of collection
 specimen_length_cm	int	default	bowp_extension_advanced	Length of specimen at time of collection
@@ -99,3 +99,4 @@ confidence_of_identification	string	default	bowp_extension	Confidence of the tax
 coc_start_coord	geopoint	array	bowp_extension_advanced	Latitude & Longitude in decimal degrees (DD) format (e.g. 45.837) of the location where the COC process started.
 field_provisional_name	string	default	bowp_extension_advanced	Common name ascribed to the specimen in the field prior to analysis or expert identification.
 microsatellite_genotype	json	json	erhodis_extension_advanded	Locus and allele sizes in the format: LocusA:128/130; LocusB:212/212; LocusC:178/182.  Two values for diploid and additional for polyploid.
+
