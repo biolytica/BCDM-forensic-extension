@@ -79,7 +79,7 @@ created_at	string:date	%Y-%m-%d	identifier	The date when the record was first cr
 updated_at	string:date	%Y-%m-%d	identifier	The date when the record was last modified in the database in GMT (UTC+0).
 saps_sample_reference_id	string	default	bowp_extension	The identifier found on the South African Police Services (SAPS) sample seal
 biobank_catalog_number	string	%s:%s	bowp_extension	Idenifier for tissue in biobank following the DWC triplet format <INST CODE>:<ID NUMBER>
-biobank_accessioning_date	date	%Y-%m-%d	bowp_extension	Date the sample was received and registered by the biobank/collection repository.
+biobank_accessioning_date	string:date	%Y-%m-%d	bowp_extension	Date the sample was received and registered by the biobank/collection repository.
 biobank_institution	string	default	bowp_extension	Institution storing the biomaterial sample.
 collector_affiliation	string	default	bowp_extension	Institutional affiliation of primary/COC collector
 collector_email	string	%s@%s.%s	bowp_extension	Email address of the primary/COC collector
@@ -99,4 +99,5 @@ confidence_of_identification	string	default	bowp_extension	Confidence of the tax
 coc_start_coord	geopoint	array	bowp_extension_advanced	Latitude & Longitude in decimal degrees (DD) format (e.g. 45.837) of the location where the COC process started.
 field_provisional_name	string	default	bowp_extension_advanced	Common name ascribed to the specimen in the field prior to analysis or expert identification.
 microsatellite_genotype	json	json	erhodis_extension_advanded	Locus and allele sizes in the format: LocusA:128/130; LocusB:212/212; LocusC:178/182.  Two values for diploid and additional for polyploid.
+
 
