@@ -3,7 +3,7 @@ associated_specimens	specimendetails.associated_specimens
 associated_taxa	specimendetails.associated_taxa	
 bin_uri	barcodecluster.uri	
 bin_created_date	barcodecluster.created	
-class	tax_denorm_mat.class	
+class	specimen.fk_tax	
 collection_code	specimen.collectioncode	
 collection_date_start	specimendetails.collectiondate	
 collection_date_accuracy	specimendetails.collectiondate_precision	
@@ -39,7 +39,7 @@ notes	specimendetails__notes.notes.note
 nuc	seqdata.nucraw	
 nuc_basecount	seqdata.nucraw_basecount	
 order	tax_denorm_mat.order	
-phylum	tax_denorm_mat.phylum	
+phylum	specimen.fk_tax	
 primers_forward	pcr_compact_view.primers_f	
 primers_reverse	pcr_compact_view.primers_r	
 processid	seqentry.processid	
