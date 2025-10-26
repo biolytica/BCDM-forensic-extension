@@ -42,7 +42,7 @@ fieldid	specimen.isolate
 sampleid	specimen.sampleid	
 taxid	specimen.taxid	
 collection_notes	specimendetails__collectionnote.notes.note	
-identified_by	specimendetails__identifier.person.fullname	
+identified_by	specimendetails.identified_by	
 notes	specimendetails__notes.notes.note	
 taxonomy_notes	specimendetails__taxnotes.notes.note	
 associated_specimens	specimendetails.associated_specimens	
