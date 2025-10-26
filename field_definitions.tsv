@@ -1,6 +1,6 @@
-field	data_type	data_format	bold:field_group	definition	required_for	
-processid	string	default	specimen	BOLD System generated unique identifier for the sample being sequenced.	update	
-sampleid	string	default	specimen	User generated identifier for the sample being sequenced, often identical to the Field ID or Museum ID.	update|create	
+field	data_type	data_format	bold:field_group	definition	required	
+processid	string	default	specimen	BOLD System generated unique identifier for the sample being sequenced.	FALSE	
+sampleid	string	default	specimen	User generated identifier for the sample being sequenced, often identical to the Field ID or Museum ID.	TRUE	
 fieldid	string	default	specimen	Specimen or sample identifier generated in the field or lot number for a bulk collection event.		
 museumid	string	default	specimen	Catalog number from a museum collection.		
 record_id	string	default	specimen	A BOLD generated identifier for the marker and specimen sequence combination.		
@@ -70,7 +70,7 @@ primers_forward	array	default	sequence	A comma separated list of forward primer 
 primers_reverse	array	default	sequence	A comma separated list of reverse primer code and sequence pairs, with each code and sequence separated by a colon.		
 sequence_run_site	string	default	sequence	Full name of the institution where sequencing was performed or the database the sequence was retrieved from.		
 sequence_upload_date	string:date	%Y-%m-%d	sequence	Date the sequence was uploaded.		
-bold_recordset_code_arr	array	default	identifier	A comma separated list of Projects and Datasets on BOLD that this record is associated with.	create	
+bold_recordset_code_arr	array	default	identifier	A comma separated list of Projects and Datasets on BOLD that this record is associated with.	FALSE	
 ecoregion	string	default	collection	Inferred RESOLVE defined ecoregion based on the collection coordinates.		
 biome	string	default	collection	Inferred RESOLVE defined biome based on the collection coordinates.		
 realm	string	default	collection	inferred RESOLVE defined realm based on collection coordinates.		
@@ -99,3 +99,4 @@ confidence_of_identification	string	default	bowp_extension	Confidence of the tax
 coc_start_coord	geopoint	array	bowp_extension_advanced	Latitude & Longitude in decimal degrees (DD) format (e.g. 45.837) of the location where the COC process started.		
 field_provisional_name	string	default	bowp_extension_advanced	Common name ascribed to the specimen in the field prior to analysis or expert identification.		
 microsatellite_genotype	json	json	erhodis_extension_advanded	Locus and allele sizes in the format: LocusA:128/130; LocusB:212/212; LocusC:178/182.  Two values for diploid and additional for polyploid.		
+
