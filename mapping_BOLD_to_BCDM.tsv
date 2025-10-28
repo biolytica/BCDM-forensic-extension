@@ -10,8 +10,8 @@ location.depth	depth
 location.depth_accuracy	depth_accuracy
 location.elev	elev
 location.elev_accuracy	elev_accuracy
-location.fk_geopol	country/ocean
-location.fk_geopol	country_iso
+geopol_denorm.country	country/ocean
+geopol_denorm.country_iso3	country_iso
 location.geopolid	geoid
 location.gps_accuracy	coord_accuracy
 location.gps_source	coord_source
@@ -90,4 +90,4 @@ specimendetails.specimen_tag_type	specimen_tag_type
 specimendetails.specimen_weight_g	specimen_weight_g
 specimendetails.tissuetype	tissue_type
 specimendetails.vouchertype	voucher_type
-tax_names.refr	species_reference
+tax.refr	species_reference
