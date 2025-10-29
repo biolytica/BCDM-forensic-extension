@@ -38,7 +38,7 @@ identification_method	specimen.identification_method	character varying(256)
 fieldid	specimen.isolate	character varying(68) 	
 sampleid	specimen.sampleid	character varying(68) 	
 taxid	specimen.fk_tax	integer 	tax
-collection_notes	specimendetails.fk_collectionnote	integer 	
+collection_notes	specimendetails.fk_collectionnote	integer 	notes
 identified_by	specimendetails.identified_by	character varying(128) 	
 notes	specimendetails.fk_notes	integer 	notes
 taxonomy_notes	specimendetails.fk_taxnotes	integer 	notes
