@@ -1,93 +1,89 @@
-bcdm_field	bold_field	bold_field_type
-bin_created_date	barcodecluster.created	
-bin_uri	barcodecluster.uri	
-province/state	geopol_denorm.province	
-region	locatdesc.region	
-sector	locatdesc.sector	
-site	locatdesc.site	
-coord	location.coord	
-depth	location.depth	
-depth_accuracy	location.depth_accuracy	
-elev	location.elev	
-elev_accuracy	location.elev_accuracy	
-country/ocean	location.fk_geopol	
-country_iso	location.fk_geopol	
-geoid	location.geopolid	
-coord_accuracy	location.gps_accuracy	
-coord_source	location.gps_source	
-marker_code	marker.code	
-primers_forward	pcr_compact_view.primers_f	
-primers_reverse	pcr_compact_view.primers_r	
-bold_recordset_code_arr	recordset.code__arr	
-sequence_run_site	seqdata__site.inst.name	
-insdc_acs	seqdata.gb_asc	
-nuc	seqdata.nucraw	
-nuc_basecount	seqdata.nucraw_basecount	
-sequence_upload_date	seqdata.updated	
-processid	seqentry.processid	
-record_id	seqentry.processid.marker.code	
-inst	specimen__fk_inst.inst.name	
-museumid	specimen.catalognumber	
-collection_code	specimen.collectioncode	
-processid_minted_date	specimen.created	
-short_note	specimen.extrainfo	
-class	specimen.fk_tax	
-family	specimen.fk_tax	
-genus	specimen.fk_tax	
-order	specimen.fk_tax	
-phylum	specimen.fk_tax	
-specimenid	specimen.id	
-identification_method	specimen.identification_method	
-fieldid	specimen.isolate	
-sampleid	specimen.sampleid	
-taxid	specimen.taxid	
-collection_notes	specimendetails__collectionnote.notes.note	
-identified_by	specimendetails.identified_by	
-notes	specimendetails__notes.notes.note	
-taxonomy_notes	specimendetails__taxnotes.notes.note	
-associated_specimens	specimendetails.associated_specimens	
-associated_taxa	specimendetails.associated_taxa	
-biobank_accessioning_date	specimendetails.biobank_accessioning_date	
-biobank_catalog_number	specimendetails.biobank_catalog_number	
-coc_start_coord	specimendetails.coc_start_coord	
-collection_event_id	specimendetails.collection_event_id	
-collection_date_start	specimendetails.collectiondate	
-collection_date_accuracy	specimendetails.collectiondate_precision	
-collection_time	specimendetails.collectiontime	
-collector_email	specimendetails.collector_email	
-collector_id	specimendetails.collector_id	
-collector_phone	specimendetails.collector_phone	
-collectors	specimendetails.collectors	
-confidence_of_identification	specimendetails.confidence_of_identification	
-field_provisional_name	specimendetails.field_provisional_name	
-biobank_institution	specimendetails.fk_biobank_institution	int
-collector_affiliation	specimendetails.fk_collector_affiliation	int
-funding_src	specimendetails.fundingsrc	
-habitat	specimendetails.habitat	
-life_stage	specimendetails.lifestage	
-specimen_linkout	specimendetails.linkout	
-method_of_delivery	specimendetails.method_of_delivery	
-microsatellite_genotype	specimendetails.microsatellite_genotype	
-reference_grade	specimendetails.reference_grade	
-reproduction	specimendetails.reproduction	
-sample_collection_kit_id	specimendetails.sample_collection_kit_id	
-sampling_protocol	specimendetails.sampling_protocol	
-saps_sample_reference_id	specimendetails.saps_sample_reference_id	
-sealed_bag_contents	specimendetails.sealed_bag_contents	
-sealed_bag_ids	specimendetails.sealed_bag_ids	
-sex	specimendetails.sex	
-site_code	specimendetails.sitecode	
-specimen_height_cm	specimendetails.specimen_height_cm	
-specimen_length_cm	specimendetails.specimen_length_cm	
-specimen_tag_id	specimendetails.specimen_tag_id	
-specimen_tag_type	specimendetails.specimen_tag_type	
-specimen_weight_g	specimendetails.specimen_weight_g	
-tissue_type	specimendetails.tissuetype	
-voucher_type	specimendetails.vouchertype	
-kingdom	specimen.fk_tax	
-species	specimen.fk_tax	
-subfamily	specimen.fk_tax	
-subspecies	specimen.fk_tax	
-tribe	specimen.fk_tax	
-species_reference	tax_names.refr	
-identification	specimen.fk_tax	
+bcdm_field	bold_field	bold_field_type	sub_table
+bin_created_date	barcodecluster.created	timestamp without time zone	
+bin_uri	barcodecluster.uri	character varying(16) 	
+province/state	location.fk_geopol	integer 	geopol
+region	locatdesc.region	character varying(200)	
+sector	locatdesc.sector	character varying(200)	
+site	locatdesc.site	character varying(200)	
+coord	location.coord	point 	
+depth	location.depth	real 	
+depth_accuracy	location.depth_accuracy	real 	
+elev	location.elev	real 	
+elev_accuracy	location.elev_accuracy	real 	
+country/ocean	location.fk_geopol	integer 	geopol
+country_iso	location.fk_geopol	integer 	geopol
+geoid	location.fk_geopol	integer 	geopol
+coord_accuracy	location.gps_accuracy	real 	
+coord_source	location.gps_source	character varying(100) 	
+marker_code	marker.code	character varying(20) 	
+primers_forward	pcr.fk_primer_f	integer 	primer
+primers_reverse	pcr.fk_primer_r	integer 	primer
+sequence_run_site	seqdata.fk_site	integer 	inst
+insdc_acs	seqdata.gb_asc	character varying(32) 	
+nuc	seqdata.nucraw	character varying(10000)	
+sequence_upload_date	seqdata.updated	timestamp without time zone	
+processid	seqentry.processid	character varying(15) 	
+inst	specimen.fk_inst	integer 	inst
+museumid	specimen.catalognumber	character varying(68) 	
+collection_code	specimen.collectioncode	character varying(35) 	
+processid_minted_date	specimen.created	timestamp without time zone	
+short_note	specimen.extrainfo	character varying(50) 	
+class	specimen.fk_tax	integer 	tax
+family	specimen.fk_tax	integer 	tax
+genus	specimen.fk_tax	integer 	tax
+order	specimen.fk_tax	integer 	tax
+phylum	specimen.fk_tax	integer 	tax
+specimenid	specimen.id	integer 	
+identification_method	specimen.identification_method	character varying(256) 	
+fieldid	specimen.isolate	character varying(68) 	
+sampleid	specimen.sampleid	character varying(68) 	
+taxid	specimen.fk_tax	integer 	tax
+collection_notes	specimendetails.fk_collectionnote	integer 	
+identified_by	specimendetails.identified_by	character varying(128) 	
+notes	specimendetails.fk_notes	integer 	notes
+taxonomy_notes	specimendetails.fk_taxnotes	integer 	notes
+associated_specimens	specimendetails.associated_specimens	character varying(1024) 	
+associated_taxa	specimendetails.associated_taxa	character varying(1024) 	
+biobank_accessioning_date	specimendetails.biobank_accessioning_date	date 	
+biobank_catalog_number	specimendetails.biobank_catalog_number	character varying(128) 	
+coc_start_coord	specimendetails.coc_start_coord	point 	
+collection_event_id	specimendetails.collection_event_id	character varying(128) 	
+collection_date_start	specimendetails.collectiondate	date 	
+collection_date_accuracy	specimendetails.collectiondate_precision	integer 	
+collection_time	specimendetails.collectiontime	character varying(64) 	
+collector_email	specimendetails.collector_email	character varying(64) 	
+collector_id	specimendetails.collector_id	character varying(64) 	
+collector_phone	specimendetails.collector_phone	character varying(64) 	
+collectors	specimendetails.collectors	character varying(150) 	
+confidence_of_identification	specimendetails.confidence_of_identification	character varying(64) 	
+field_provisional_name	specimendetails.field_provisional_name	character varying(64) 	
+biobank_institution	specimendetails.fk_biobank_institution	integer 	inst
+collector_affiliation	specimendetails.fk_collector_affiliation	integer 	inst
+funding_src	specimendetails.fundingsrc	character varying(64) 	
+habitat	specimendetails.habitat	character varying(256) 	
+life_stage	specimendetails.lifestage	character varying(128) 	
+specimen_linkout	specimendetails.linkout	character varying(256) 	
+method_of_delivery	specimendetails.method_of_delivery	character varying(64) 	
+microsatellite_genotype	specimendetails.microsatellite_genotype	jsonb 	
+reference_grade	specimendetails.reference_grade	character varying(64) 	
+reproduction	specimendetails.reproduction	character(1) 	
+sample_collection_kit_id	specimendetails.sample_collection_kit_id	character varying(64) 	
+sampling_protocol	specimendetails.sampling_protocol	character varying(128) 	
+saps_sample_reference_id	specimendetails.saps_sample_reference_id	character varying(64) 	
+sealed_bag_contents	specimendetails.sealed_bag_contents	character varying(64)[] 	
+sealed_bag_ids	specimendetails.sealed_bag_ids	character varying(64)[] 	
+sex	specimendetails.sex	character(1) 	
+site_code	specimendetails.sitecode	character varying(128) 	
+specimen_height_cm	specimendetails.specimen_height_cm	integer 	
+specimen_length_cm	specimendetails.specimen_length_cm	integer 	
+specimen_tag_id	specimendetails.specimen_tag_id	character varying(64)[] 	
+specimen_tag_type	specimendetails.specimen_tag_type	character varying(64)[] 	
+specimen_weight_g	specimendetails.specimen_weight_g	integer 	
+tissue_type	specimendetails.tissuetype	character varying(100) 	
+voucher_type	specimendetails.vouchertype	character varying(100) 	
+kingdom	specimen.fk_tax	integer 	tax
+species	specimen.fk_tax	integer 	tax
+subfamily	specimen.fk_tax	integer 	tax
+subspecies	specimen.fk_tax	integer 	tax
+tribe	specimen.fk_tax	integer 	tax
+identification	specimen.fk_tax	integer 	tax
