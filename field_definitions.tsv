@@ -70,7 +70,7 @@ primers_forward	array	default	sequence	A comma separated list of forward primer 
 primers_reverse	array	default	sequence	A comma separated list of reverse primer code and sequence pairs, with each code and sequence separated by a colon.
 sequence_run_site	string	default	sequence	Full name of the institution where sequencing was performed or the database the sequence was retrieved from.
 sequence_upload_date	string:date	%Y-%m-%d	sequence	Date the sequence was uploaded.
-bold_recordset_code_arr	array	default	identifier	A comma separated list of Projects and Datasets on BOLD that this record is associated with.
+bold_recordset_code_arr	array	default	record organization	A comma separated list of Projects and Datasets on BOLD that this record is associated with.
 ecoregion	string	default	collection	Inferred RESOLVE defined ecoregion based on the collection coordinates.
 biome	string	default	collection	Inferred RESOLVE defined biome based on the collection coordinates.
 realm	string	default	collection	inferred RESOLVE defined realm based on collection coordinates.
